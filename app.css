@@ -1,0 +1,137 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e3e3e3;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body header {
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+}
+
+body .mobile-menu {
+  display: none;
+}
+
+body .loco {
+  margin-left: 35px;
+}
+
+body hr {
+  display: block;
+  margin-bottom: 0.9em;
+  margin-left: 0px;
+  border-width: 2px;
+  color: #e0dfdf;
+  width: 700px;
+  size: 1;
+  padding: 0.01rem 2rem;
+}
+
+body .cards {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 15rem;
+          column-gap: 15rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+body .cards .card {
+  padding: .3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  color: #5d5e5e;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .cards .thumbnail img {
+  height: 142px;
+  width: 142px;
+  margin: auto;
+}
+
+body .cards .card-content {
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 140px;
+}
+
+body .cards .card h2 {
+  padding: 5px;
+  margin: 0;
+}
+
+body .cards .card p {
+  padding: 0 0px;
+  margin: 0;
+}
+
+body .cards .post {
+  margin-top: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body body {
+    font-size: 12px;
+  }
+  body .loco {
+    text-align: center;
+    margin-left: 35px;
+  }
+  body .container .menu {
+    display: none;
+  }
+  body .container .mobile-menu {
+    display: inline-block;
+  }
+}
+
+body footer {
+  grid-area: footer;
+  background-color: #4a4a4a;
+  color: #dbdbdb;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+/*# sourceMappingURL=app.css.map */
